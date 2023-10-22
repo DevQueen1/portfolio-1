@@ -81,7 +81,7 @@ nav .logo:hover {
     font-size: 3rem;
 }
 .banner {
-    background-image: url('/assets/images/banner-bg.jpg');
+    background-image: url('../../assets/images/banner-bg.jpg');
     background-size: cover;
     background-position: 70% 25%;
     background-attachment: fixed;
