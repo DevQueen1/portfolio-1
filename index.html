@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+ <script defer src="./assets/js/script.js"></script>
+
+
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="/assets/js/script.js"></script>
     <title>Portfolio</title>
   </head>
   <body>
@@ -17,9 +20,9 @@
         </a>
         <ul>
           <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li id="contact"><a href="contact.html">Contact Me</a></li>
         </ul>
       </nav>
     </header>
@@ -109,32 +112,41 @@
           </div>
         </section>  
       <!--------------------------Projects--------------------------------->
-      <!--<section class="projects" id="projects">
-        Have a grid/flex box of divs. When users hovers over the div it will
-        display name of the project and link to git hub page.
-      </section>-->
-    
-      <!--------------------------Contact---------------------------------->
-      <!--<section class="contact" id="contact">
-        <div class="my-info">
-            email
-            github
-            website
+      <section class="projects" id="projects">
+       <h2>Portfolio Projects</h2>
+       
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta debitis dolorum aperiam commodi atque sed.</p>
+       <div class="projects-container">
+        <div class="project">
+          <div class="project-title" id="title1">
+            <p id="title">Teashop Website</p>
+            <span class="material-icons">expand_more</span>
+          </div>
+          <a class="links" id="link1" href="https://devqueen1.github.io/DevQueen1.github.io-teashop/" target="_blank">View Teashop</a>
         </div>
-        <div class="contact-form">
-            <form action="">
-                <h3>Email me</h3>
-                name <input type="text">
-                email address <input type="text">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </form>
+      <hr>
+        <div class="project">
+          <div class="project-title" id="title2">
+            <p>Cheatsheet Website</p>
+            <span class="material-icons">expand_more</span>
+          </div>
+          <a class="links" id="link2" href="https://devqueen1.github.io/DevQueen1.github.io-cheatsheet/">View Cheatsheet</a>
         </div>
+        <hr>
+        <div class="project">
+          <div class="project-title" id="title3">
+            <p>Art Website</p>
+            <span class="material-icons">expand_more</span>
+          </div>
+          <a class="links" id="link3" href="https://devqueen1.github.io/DevQueen1.github.io-project/">View Artshop</a>
+        </div>
+       </div>
       </section>
-    </main>-->
     <!---------------------------Footer--------------------------------->
     <footer>
       <p class="logo">DevQueen1</p>
-      <p>Code Viewable At: https://github.com/DevQueen1/portfolio-1</p>
+      <p>Code Viewable At: <a href="">My GitHub</a></p>
+      
     </footer>
   </body>
 </html>
