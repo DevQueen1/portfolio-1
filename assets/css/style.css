@@ -2,6 +2,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     --darkteagreen: #1b2315;
     --darkcolor: #040403;
     --resedagreen: #5B7553;
@@ -14,9 +15,21 @@ html {
 }
 body {
     font-family: 'Nunito', sans-serif;
-   
-    
 }
+h2 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.material-icons {
+    font-size: 36px !important;
+    color: var(--resedagreen);
+}
+/******************************Header*******************************/
 header {
     background-color: white;
     width:100%;
@@ -39,9 +52,7 @@ nav ul {
 }
 nav li {
     list-style: none;
-   
 }
-
 nav a {
     text-decoration: none;
 }
@@ -52,8 +63,7 @@ nav li a {
     background-color: var(--darkcolor);
     padding: 8px 12px;
     border-radius: 20px;
-    transition: 250ms;
-    
+    transition: 250ms; 
 }
 nav li a:hover {
     color: #040403;
@@ -67,7 +77,6 @@ nav li a:active {
     color: var(--resedagreen);
     cursor: pointer;
 }
-
 nav .logo {
     margin-left: 0.2em;
     color: #040403;
@@ -112,7 +121,6 @@ nav .logo:hover {
     gap: 10px;
     color: var(--teagreen);
 }
-
 .banner h1 {
     font-size: 3rem;
     font-weight: 900;
@@ -144,11 +152,175 @@ nav .logo:hover {
 }
 main {
  position: relative;  
- top: 500px;
+ top: 200px;
 }
+
+.skill-description {
+    text-align: center;
+}
+/*****************************About*********************************/
+.about {
+    display: flex;
+    flex-direction: row;
+    background-color: #5B7553;
+    height: 350px;
+    margin-bottom: 30px;
+}
+.about-text {
+margin-left: 1rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+flex-basis: 50%;
+justify-content: space-evenly;
+}
+.about p {
+    text-align: center;
+}
+.about-image { 
+    width: 400px;
+    height: inherit;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-evenly;
+    border-left: 1px solid white;
+}
+.about-image img {
+    margin-top: ;
+    width: 270px;
+    height: 270px;
+    border-radius: 135px;
+    border: 0.5px solid var(--celadon); 
+}
+.about-image p {
+    color: var(--teagreen);
+    font-size: 1.4rem;
+}
+/*****************************Soft Skills********************************/
+.skill-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: top;
+}
+.skills h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.soft-skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+}
+.skill-rows {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: ;
+    width: 100%;
+
+}
+.skill p {
+    font-weight: 700;
+    font-size: 1rem;
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }
+/**********************Technical Skills**********************************************/
+.tech-skills-container {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    border-left: 1px solid var(--resedagreen);
+}
+
+.skill-bar-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    gap: .8rem;
+}
+.skill-bar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+}
+.skill-bar p {
+    flex-basis: 30%;
+    flex-grow: 1;
+    font-weight: 700;
+}
+.border {
+    background: var(--darkteagreen);
+    height: 1.4rem;
+    width: 20rem;
+    padding: 3px; 
+}
+.border:after {
+    content: '';
+    display: block;
+    background: var(--resedagreen);
+    width: 100%;
+    height: 100%;
+}
+.bar4:after {
+    content: '';
+    display: block;
+    background: var(--resedagreen);
+    width: 95%;
+    height: 100%;
+}
+.bar5:after {
+    content: '';
+    display: block;
+    background: var(--resedagreen);
+    width: 90%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
     position: relative;
-    bottom: 0px;
+    top: 600px;
 
 }
 
